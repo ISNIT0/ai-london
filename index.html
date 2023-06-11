@@ -17,14 +17,20 @@
             right: 0px;
             bottom: 0px;
             width: 100%;
-            max-width: 500px;
+            max-width: 800px;
             padding: 10px;
             box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
         }
 
-        a.sign-up {
+        a.sign-up-form,
+        a.sign-up-form,
+        a.sign-up-whatsapp {
             display: inline-block;
             width: 100%;
+            max-width: 300px;
             color: white;
             text-decoration: none;
             background-color: #1e61f0;
@@ -36,10 +42,18 @@
             transition: 0.2s;
             vertical-align: middle;
             box-sizing: border-box;
+            white-space: nowrap;
+            margin: 5px;
         }
 
-        a.sign-up:hover {
+        a.sign-up-whatsapp {
+            background-color: #25d366;
+        }
+
+        a.sign-up-form:hover,
+        a.sign-up-whatsapp:hover {
             opacity: 0.8;
+            transform: rotateZ(1deg);
         }
 
         .emoji {
@@ -47,15 +61,42 @@
             vertical-align: middle;
         }
     </style>
+
+    <!-- Primary Meta Tags -->
+    <title>AI London - Events and Community</title>
+    <meta name="title" content="AI London - Events and Community">
+    <meta name="description"
+        content="Stay up-to-date with everything AI related that's happening in London. Learn, meet people, and have a great time.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ailondon.org/">
+    <meta property="og:title" content="AI London - Events and Community">
+    <meta property="og:description"
+        content="Stay up-to-date with everything AI related that's happening in London. Learn, meet people, and have a great time.">
+    <meta property="og:image" content="/banner.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ailondon.org/">
+    <meta property="twitter:title" content="AI London - Events and Community">
+    <meta property="twitter:description"
+        content="Stay up-to-date with everything AI related that's happening in London. Learn, meet people, and have a great time.">
+    <meta property="twitter:image" content="/banner.png">
 </head>
 
 <body style="width:100vw;height:100vh;margin:0;padding:0;border:0;">
     <iframe src="https://docs.google.com/spreadsheets/d/1tfaeQN4AVgXm2_E3Ksj26KKv-3X7FIlo17OgB-_hvhg/edit#gid=0"
         frameborder="0" style="width:100%;height:100%;margin:0;padding:0;border:0;"></iframe>
-    <aside class="sign-up-wrapper"> <a class="sign-up"
+    <aside class="sign-up-wrapper">
+        <a class="sign-up-whatsapp" href="https://chat.whatsapp.com/Cqygh8jLrSYClFTHBAtJGb"><span class="emoji">✨</span>
+            Sign Up to WhatsApp
+        </a>
+        <a class="sign-up-form"
             href="https://docs.google.com/forms/d/e/1FAIpQLSfZeiYWzWcb4nFeCos_ADGywd_fCd9KgOFF9x3GpXb5l-v9ng/viewform?usp=sf_link"><span
                 class="emoji">✨</span>
-            Sign Up to Newsletter</a>
+            Sign Up to Newsletter
+        </a>
     </aside>
 </body>
 
